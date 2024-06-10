@@ -21,7 +21,7 @@ The NutriFit website is dedicated to promoting health and wellness through perso
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/MohamedAmineBessrour/Nutrifit.git
+   https://github.com/aminebes/aminebes.github.io.git
    ```
 
 2. **Navigate to the Project Directory**:
