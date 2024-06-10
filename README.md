@@ -26,7 +26,7 @@ The NutriFit website is dedicated to promoting health and wellness through perso
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd Nutrifit
+   cd aminebes.github.io
    ```
 
 3. **Open `index.html`**:
