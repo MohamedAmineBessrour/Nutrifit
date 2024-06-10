@@ -1,0 +1,420 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #282830;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1B1919;
+}
+.navbar-brand:hover {
+    color: #1B1919;
+}
+
+.hero-container {
+    background-color: #ffffff;
+    padding-bottom: 50px; /* Set the background to white */
+}
+
+.hero-section {
+    position: relative;
+    background: url('images/cover-photo.jpg') no-repeat center center/cover;
+    background-color: #968585;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 15px; /* Arrondit les bords */
+    overflow: hidden; /* Assure que l'image de fond respecte les coins arrondis */
+    min-height: 75vh; /* Définit une hauteur minimale de 75% de la hauteur de la fenêtre */
+    color: #1B1919;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-banner {
+    background-color: #E6F8D2cc; /* Slightly transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    border-radius: 10px;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 100%;
+}
+
+.hero-banner h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.hero-banner p {
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.nav-link.btn-outline-orange:hover,
+.nav-link.btn-outline-orange:focus,
+.nav-link.btn-outline-orange:active {
+    box-shadow: none;
+}
+
+
+.nav-link.btn.btn-outline-dark:hover,
+.nav-link.btn.btn-outline-dark:focus,
+.nav-link.btn.btn-outline-dark:active {
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+
+
+.hero-banner .btn {
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #FE9B23;
+    border-color: #FE9B23;
+    color: #1B1919;
+    border-radius: 12px;
+    font-weight: 700;
+
+}
+.hero-banner .btn:hover,
+.hero-banner .btn:focus,
+.hero-banner .btn:active {
+    color: #1B1919;
+    background-color: transparent;
+    border-color: #1B1919;
+    outline: none;
+    box-shadow: none;
+}
+
+
+.programs .card {
+    background-color: #ffffff; /* Change the background to white */
+    border: 1.5px solid #1B1919; /* Add a light bordhoverer */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Add rounded corners */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for better space management */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Ensure consistent spacing */
+    height: 100%; /* Ensure all cards have the same height */
+}
+
+.programs .card-img-top {
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    border-radius: 12px 12px 0 0; /* Round the top corners of the image */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-description {
+    flex-grow: 1;
+    margin-bottom: 20px; /* Adjust the space between the description and the button */
+}
+
+.card .btn {
+    width: auto; /* Ensure the button width is auto */
+    align-self: center; /* Center the button horizontally */
+}
+
+
+.programs .card-title {
+    font-size: 1.2rem; /* Set the font size for the card title */
+    font-weight: bold; /* Make the card title bold */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.programs .card-text {
+    font-size: 1rem; /* Set the font size for the card text */
+    margin-bottom: 20px; /* Add some space below the text */
+}
+
+.programs .btn {
+    background-color: #ffffff; /* Set the background color to white */
+    color: #000000; /* Set the text color to black */
+    border: 1px solid #000000; /* Add a black border */
+    border-radius: 12px; /* Add rounded corners to the button */
+    padding: 10px 20px; /* Add padding around the button text */
+    text-transform: uppercase; /* Transform the button text to uppercase */
+}
+
+.custom-card {
+    width: 90%; /* Increase the width of each card */
+    margin: auto; /* Center the card within the column */
+}
+.footer {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 20px 0;
+    color: #282830; /* Set the text color */
+}
+
+.footer .container {
+    max-width: 1140px; /* Adjust the max width to match the cards */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding for spacing */
+}
+
+.footer .row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one line */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.5;
+    color: #282830; /* Set the text color to match the other text */
+}
+
+.footer a {
+    color: #282830; /* Set the link color to match the other text */
+    text-decoration: none;
+    margin-right: 10px; /* Space between social icons */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .col-md-4 {
+    padding: 20px; /* Add padding around each column */
+    min-width: 200px; /* Ensure a minimum width for smaller screens */
+}
+
+.footer .fa {
+    font-size: 1.5rem; /* Reduce the size of the social icons */
+    margin-right: 10px; /* Add space between social icons */
+}
+
+.footer .container.text-center {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.services-section {
+    padding-top: 10px 0;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.services-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #282830;
+}
+
+
+.footer .container.text-center p {
+    padding: 10px 0;
+}
+
+
+.card {
+    background-color: #d3d3d3; /* Change le fond de la carte en gris clair */
+    border: none; /* Supprime la bordure de la carte */
+    margin: 0; /* Supprime la marge */
+}
+
+.card-body {
+    padding: 15px; /* Ajoute un léger padding autour du contenu de la carte */
+}
+
+.expert-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    height: 400px; /* Set a fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.expert-card .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.expert-card .card-body {
+    padding: 20px;
+}
+
+.expert-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.expert-card .card-subtitle {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.expert-card .card-text {
+    font-size: 0.9rem;
+    color: #777777;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .expert-card .row {
+        flex-direction: column;
+    }
+    .expert-card .card-img-top {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: auto;
+    }
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-white:hover {
+    text-decoration: none;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #F0F0F0; /* Traité de séparation noir */
+    background-color: white; /* Fond blanc */
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: url('images/aboutus.jpg') no-repeat center center/cover;
+}
+.hero-text {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 8rem;
+    font-weight: 800;
+}
+.about-us-text {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1140px;
+}
+.booking-header {
+    text-align: center;
+    margin-top: 50px;
+}
+.calendar-container, .time-picker-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.calendar-container iframe {
+    border: none;
+}
+.info-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.info-box {
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+.booking-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.confirm-button {
+    background-color: #FE9B23;
+    border: none;
+    color: #1B1919;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    display: block;
+    margin: 30px auto 0;
+    width: 80%;
+}
+
+
+@media (max-width: 768px) {
+    .info-box, .booking-summary {
+        width: 90%;
+    }
+}
+
+.confirmation-section .btn {
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #FE9B23;
+    border-color: #FE9B23;
+    color: #1B1919;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.confirmation-icon {
+    margin-bottom: 20px;
+}
+
+.quiz-section {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+.star-rating {
+    margin-top: 10px;
+}
+
+.star-rating .fa-star,
+.star-rating .fa-star-half-alt {
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.star-rating .fa-star.far {
+    color: #dcdcdc; /* Light gray color for empty stars */
+}

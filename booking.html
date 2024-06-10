@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Service Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/knife-fork.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff; padding-bottom: 15px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/knife-fork.png" alt="NutriFit Logo" style="width: 24px; height: 24px;" href="index.html"> NutriFit
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="margin-right: 20px; color: #1B1919; font-weight: 500;">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="margin-right: 20px; color: #1B1919; font-weight: 500;">Nutrition experts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html" style="margin-right: 250px; color: #1B1919; font-weight: 500;">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-orange" href="booking.html" style="margin-right: 15px; border-color: #1B1919; color: #1B1919; font-weight: 500; border-radius: 12px;">Book an appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-orange" href="#contact" style="background-color: #FE9B23; border-color: #FE9B23; font-weight: 550; border-radius: 12px;">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="separator" style="background-color: #ffffff; padding: 10px;"></div>
+
+    <!-- Booking Section -->
+    <section style="background-color: #ffffff">
+        <div class="container" style="background-color: #ffffff">
+            <div class="booking-header">
+                <h1 style="font-size: 4rem; padding-bottom: 60px;">Service Selection</h1>
+                <div class="separator-container" style="background-color: #ffffff; padding-right: 50px; padding-left: 50px; padding-bottom: 40px;">
+                    <div class="separator" style="background-color: #ffffff; border-top: 2px solid #F0F0F0;"></div> 
+                </div>
+                <p style="padding-bottom: 20px;">Select your service and start your journey to better health.</p>
+                <div class="icon-selection">
+                    <div>
+                        <p><i class="fa fa-cutlery" style="margin-right: 10px;"></i> Select a program</p>
+                        <select class="form-control" id="program-select" style="max-width: 300px; margin: 0 auto;">
+                            <option>Personalized Consultation</option>
+                            <option>Weight Loss</option>
+                            <option>Meal Planning</option>
+                            <option>Gut Health</option>
+                            <option>Nutritional Coaching</option>
+                            <option>Plant-based Nutrition</option>
+                            <option>Sports Nutrition</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p style="padding-top: 20px;"><i class="fa fa-user" style="margin-right: 10px;"></i> Choose an expert</p>
+                        <select class="form-control" id="expert-select" style="max-width: 300px; margin: 0 auto;">
+                            <option>Sarah Remmer</option>
+                            <option>Sam Miller</option>
+                            <option>Avery Zenker</option>
+                            <option>Antoine Beauchamp</option>
+                            <option>Kristina Dunkley</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-container">
+                <p><i class="fa fa-calendar" style="margin-right: 10px;"></i> Select Date</p>
+                <input type="date" class="form-control" id="date-input" style="max-width: 300px; margin: 0 auto;">
+            </div>
+            <div class="time-picker-container">
+                <p><i class="fa fa-clock-o" style="margin-right: 10px;"></i> Select Time</p>
+                <select class="form-control" id="time-select" style="max-width: 300px; margin: 0 auto;">
+                    <option>9 AM</option>
+                    <option>10 AM</option>
+                    <option>11 AM</option>
+                    <option>12 PM</option>
+                    <option>1 PM</option>
+                    <option>2 PM</option>
+                    <option>3 PM</option>
+                    <option>4 PM</option>
+                    <option>5 PM</option>
+                    <option>6 PM</option>
+                </select>
+            </div>
+            <div class="info-section">
+                <div class="info-box">
+                    <h5>1. Personal Info</h5>
+                    <div>
+                        <label style="padding-top: 10px;">Full Name</label>
+                        <input style="padding-top: 10px;" type="text" class="form-control" id="full-name">
+                    </div>
+                    <div>
+                        <label style="padding-top: 10px;">Date of Birth</label>
+                        <input style="padding-top: 10px;" type="date" class="form-control" id="dob">
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h5>2. Payment Details</h5>
+                    <div>
+                        <label style="padding-top: 10px;">Billing Address</label>
+                        <input style="padding-top: 10px;" type="text" class="form-control" id="billing-address">
+                    </div>
+                    <div>
+                        <label style="padding-top: 10px;">Postal Code</label>
+                        <input style="padding-top: 10px;" type="text" class="form-control" id="postal-code">
+                    </div>
+                    <div>
+                        <label style="padding-top: 10px;">City</label>
+                        <input style="padding-top: 10px;" type="text" class="form-control" id="city">
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h5>3. Contact Information</h5>
+                    <div>
+                        <label style="padding-top: 10px;">Email Address</label>
+                        <input style="padding-top: 10px;" type="email" class="form-control" id="email">
+                    </div>
+                    <div>
+                        <label style="padding-top: 10px;">Phone Number</label>
+                        <input style="padding-top: 10px;" type="text" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div class="booking-summary">
+                    <button class="confirm-button">Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <h5>Contact us</h5>
+                <p style="text-align: left; padding-left: 20px; padding-bottom: 8px;">
+                    <i class="fa-solid fa-envelope fa-lg" style="margin-right: 10px;"></i> 
+                    <a href="mailto:contact@nutrifit.com">contact@nutrifit.com</a>
+                </p>
+                <p style="text-align: left; padding-left: 20px; padding-bottom: 8px;">
+                    <i class="fa-solid fa-phone fa-lg" style="margin-right: 10px;"></i>(555) 739-2841
+                </p>
+                <p style="text-align: left; padding-left: 20px;">
+                    <i class="fa-solid fa-location-dot fa-lg" style="margin-right: 10px;"></i> 
+                    123 Laurier St, Ottawa, ON, Canada
+                </p>
+                
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Opening hours</h5>
+                <p style="text-align: left; padding-left: 15px; padding-top: 5px"><strong>Monday to Friday:</strong> 9:00 AM - 6:00 PM</p>
+                <p style="text-align: left; padding-left: 15px;"><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                <p style="text-align: left; padding-left: 15px;"><strong>Sunday:</strong> Closed</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Connect with Us</h5>
+                <a href="#contact" ><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="#contact" ><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <a href="#contact" ><i class="fa-brands fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center services-section">
+        <p class="services-title">
+            <img src="images/knife-fork.png" alt="NutriFit Logo" class="logo" style="width: 24px; height: 24px;"> NutriFit Services
+        </p>
+    </div>
+    <div class="separator"></div>
+    <div class="container text-center" style="padding: 0;">
+        <p>Copyright © NutriFit 2024</p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
